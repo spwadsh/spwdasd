@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ứng dụng Học Tập + Gacha</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Ứng Dụng Học Tập</h1>
+  
+      <div class="section">
+        <h2>Thông Tin</h2>
+        <p>Điểm: <span id="points">0</span> | Gacha: <span id="gachaPoints">0</span> | Reset sau: <span id="resetTimer"></span></p>
+        <progress id="progressBar" max="10000" value="0"></progress>
+        <div id="rewardMessage" class="reward-message"></div>
+      </div>
+  
+      <div class="section">
+        <h2>Nhiệm Vụ</h2>
+        <ul id="taskList"></ul>
+      </div>
+  
+      <div class="section btn-container">
+        <button id="dailyLoginBtn">📅 Nhận điểm mỗi ngày</button>
+        <button id="convertPointsBtn">🔁 Đổi 10 điểm lấy 5 Gacha</button>
+        <button id="convert500ToGachaBtn">🔁 Đổi 500 điểm lấy 250 Gacha</button>
+        <button id="resetTasksBtn">🔄 Reset nhiệm vụ (750 điểm)</button>
+      </div>
+  
+      <div class="section">
+        <h2>🎰 Gacha</h2>
+        <button id="gachaBtn">Quay Gacha</button>
+        <div id="gachaRewardMessage" class="gacha-reward-message"></div>
+      </div>
+      <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Chuyển sang chế độ ban đêm</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="darkMode.js"></script>
+</body>
