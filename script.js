@@ -178,9 +178,9 @@ const taskList = document.getElementById("taskList");
       }
     };
     document.getElementById("gachaBtn").onclick = () => {
-      if (state.points >= 250) { // Kiểm tra xem người dùng có đủ điểm không
-        state.points -= 250;  // Trừ điểm khi quay
-        state.gacha++;  // Tăng số lần quay Gacha
+      if (state.gacha >= 250) { // Kiểm tra xem người dùng có đủ điểm không
+        state.gacha -= 250;  // Trừ điểm khi quay
+        //state.gacha++;  // Tăng số lần quay Gacha
         saveState();  // Lưu trạng thái
         updateUI();  // Cập nhật lại UI
     
