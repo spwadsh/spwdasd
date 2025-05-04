@@ -143,7 +143,7 @@ const taskList = document.getElementById("taskList");
     document.getElementById("dailyLoginBtn").onclick = () => {
       const today = new Date().toLocaleDateString();
       if (state.lastLoginDate !== today) {
-        state.points += 50;
+        state.points += 300;
         state.lastLoginDate = today;
         saveState();
         updateUI();
@@ -178,8 +178,8 @@ const taskList = document.getElementById("taskList");
       }
     };
     document.getElementById("gachaBtn").onclick = () => {
-      if (state.points >= 10) { // Kiểm tra xem người dùng có đủ điểm không
-        state.points -= 10;  // Trừ điểm khi quay
+      if (state.points >= 250) { // Kiểm tra xem người dùng có đủ điểm không
+        state.points -= 250;  // Trừ điểm khi quay
         state.gacha++;  // Tăng số lần quay Gacha
         saveState();  // Lưu trạng thái
         updateUI();  // Cập nhật lại UI
